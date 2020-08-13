@@ -1,6 +1,6 @@
 import os
 from slack import RTMClient
-
+import threading
 
 class BddRTMClient:
 
@@ -8,10 +8,14 @@ class BddRTMClient:
 
     def __init__(self):
         slack_token = os.environ["SLACK_BDD_API_TOKEN"]
-        rtm_client = RTMClient(token=slack_token)
+        self.rtm_client = RTMClient(token=slack_token)
 
-        rtm_client.on(event="message", callback=self.say_hello)
-        rtm_client.start()
+        self.rtm_client.on(event="message", callback=self.listen)
+        self.rtm_thread = threading.Thread(name="rtm_client", target=self.rtm_client.start)
+        self.rtm_thread.start()
 
-    def say_hello(self, **payload):
+    def listen(self, **payload):
         self.event_trail.append(payload["data"])
+
+    def stop(self):
+        self.rtm_client.stop()
