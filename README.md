@@ -29,7 +29,9 @@ You'll need 4 apps in total:
 - BDD app as the observer (# TODO: future assertion will be added)
 - 3 dummy player bots.
 
-Copy each of the Bot User OAuth Access Token to `config/bots`
+Steps:
+- Create a copy of `config/bots.template` and name it `config/bots`
+- Copy each of the Bot User OAuth Access Token to `config/bots`
 
 ### Running the app
 
