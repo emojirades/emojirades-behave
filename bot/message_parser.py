@@ -9,8 +9,8 @@ class MessageParser:
     def __init__(self, config: Config):
         self.users: List[User] = config.users
 
-    def with_message(self, phrase):
-        self.message = phrase
+    def with_message(self, message):
+        self.message = message
         return self
 
     def uid_to_tag(self):

@@ -1,6 +1,9 @@
 @spike
-Feature: Dummy Chats
-  2 dummies talking to each other
+Feature: Engine Check
+  Checking if all systems are good
 
-  Scenario: Knock Knock
-    When Robbins says "<@U8MLS5TRC> new game <@UNN6M51PB> <@UNWEAHW5D>"
+  Scenario: All the bots are running
+    When Robbins says "Call out to @emojirade"
+    When Fendy says "Something to @robbins"
+    When Dave says "hi to @fendy"
+    When Fendy says "hi back to @dave"

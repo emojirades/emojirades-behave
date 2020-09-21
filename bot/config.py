@@ -11,12 +11,13 @@ class User:
 class Config:
     users: List[User] = []
 
-    def __init__(self, users: List[User]):
+    def __init__(self, users: List[User] = None):
         if not users:
             self.users = [
                 self.__create_user_config("robbins", "ROBBINS_USERID"),
                 self.__create_user_config("fendy", "FENDY_USERID"),
                 self.__create_user_config("dave", "DAVE_USERID"),
+                self.__create_user_config("emojirade", "EMOJIRADE_USERID")
             ]
         else:
             self.users = users
