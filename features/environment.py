@@ -13,7 +13,9 @@ def slack_rtm_client(context):
 
 def before_all(context):
     use_fixture(slack_rtm_client, context)
-    context.robbins_bot = Dummy(os.environ.get("ROBBINS_BOT_TOKEN", None), "Robbins")
+    context.robbins_bot = Dummy(os.environ["ROBBINS_BOT_TOKEN"], "Robbins")
+    context.robbins_dave = Dummy(os.environ["DAVE_BOT_TOKEN"], "Dave")
+    context.robbins_fendy = Dummy(os.environ["FENDY_BOT_TOKEN"], "Fendy")
 
 
 def after_all(context):

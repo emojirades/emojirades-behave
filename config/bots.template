@@ -2,8 +2,16 @@
 
 # This file is gitignored
 # IMPORTANT!! don't check in the real tokens
+
+# Bot tokens
 export SLACK_BDD_API_TOKEN=
 export ROBBINS_BOT_TOKEN=
 export DAVE_BOT_TOKEN=
 export FENDY_BOT_TOKEN=
+
+# Bot userids
+export EMOJIRADE_USERID=
+export DAVE_USERID=
+export ROBBINS_USERID=
+export FENDY_USERID=
 # IMPORTANT!! don't check in the real tokens
