@@ -3,7 +3,6 @@ Dummies as in crash test dummies, not useless dummies.
 """
 
 from slack import WebClient
-import os
 
 
 class Dummy:
