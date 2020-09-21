@@ -1,4 +1,4 @@
-# slackbot_bdd
+# Emojirade Behavioral Tests
 A library of behave steps to interact with Slack API and bots
 
 First iteration is a recorded set of commands to simulate 3 players game
