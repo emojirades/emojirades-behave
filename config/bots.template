@@ -4,14 +4,21 @@
 # IMPORTANT!! don't check in the real tokens
 
 # Bot tokens
+export SLACK_BOT_TOKEN=
 export SLACK_BDD_API_TOKEN=
 export ROBBINS_BOT_TOKEN=
 export DAVE_BOT_TOKEN=
 export FENDY_BOT_TOKEN=
+# IMPORTANT!! don't check in the real tokens
 
 # Bot userids
+# Can't really find them from slack. One way to get the is by observing the emojirade logs.
 export EMOJIRADE_USERID=
 export DAVE_USERID=
 export ROBBINS_USERID=
 export FENDY_USERID=
-# IMPORTANT!! don't check in the real tokens
+
+# Emojirade bot config
+export SCORE_FILE=config/score.json
+export STATE_FILE=config/state.json
+export EMOJIRADE_MOCK_DATE=20200917
