@@ -133,3 +133,5 @@ dmypy.json
 # Locals
 
 config/bots
+config/score.json
+config/state.json
