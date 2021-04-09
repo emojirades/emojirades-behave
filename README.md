@@ -22,16 +22,17 @@ pip install -r requirements.txt
 ```
 
 ### Setting up auths
-Run Emojirades app on the side. Or you can test against the live app as well.
-Although the dummy bots need to be setup manually and added to the workplace.
+Dummy bots need to be setup and added to the workplace manually.
 
 You'll need 4 apps in total:
 - BDD app as the observer (# TODO: future assertion will be added)
 - 3 dummy player bots.
 
 Steps:
-- Create a copy of `config/bots.template` and name it `config/bots`
+- Remove `template` from `config/bots.template` 
 - Copy each of the Bot User OAuth Access Token to `config/bots`
+- Remove `template` from `config/auth.json.template`
+- Update `auth.json` with `emojiradebot` access token
 
 ### Running the app
 

@@ -21,4 +21,5 @@ export FENDY_USERID=
 # Emojirade bot config
 export SCORE_FILE=config/score.json
 export STATE_FILE=config/state.json
+export AUTH_FILE=config/auth.json
 export EMOJIRADE_MOCK_DATE=20200917

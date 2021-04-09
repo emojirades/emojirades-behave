@@ -5,4 +5,4 @@ cd $(dirname $0)/..
 . config/bots
 
 pip install -e ../emojirades
-../emojirades/bin/emojirades --score-file $SCORE_FILE --state-file $STATE_FILE ${@:-}
+../emojirades/bin/emojirades single --score-file $SCORE_FILE --state-file $STATE_FILE --auth-file $AUTH_FILE ${@:-}
